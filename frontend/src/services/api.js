@@ -3,7 +3,8 @@
 // Components never call fetch() directly — they call these functions.
 // This means if your API changes later, you edit ONE file, not every page.
 
-const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://expense-lending-app.onrender.com/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
